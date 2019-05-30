@@ -32,14 +32,16 @@ public class Animal {
 //			Animal test = (Animal) obj;
 //			if(test.getName() == this.getName()) {
 				return true;
-			}
-//		}
+//			}
+		}
 		return false;
 	}
 
 	@Override
 	public int hashCode() {
-		return this.name.hashCode() + 57 + this.origin.hashCode();
+		return this.name.hashCode() + 57 
+				+ this.origin.hashCode()
+				;
 	}
 	
 	
