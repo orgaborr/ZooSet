@@ -29,11 +29,11 @@ public class Animal {
 		} else if(obj == null) {
 			return false;
 		} else if(obj instanceof Animal) {
-			Animal test = (Animal) obj;
-			if(test.getName() == this.getName()) {
+//			Animal test = (Animal) obj;
+//			if(test.getName() == this.getName()) {
 				return true;
 			}
-		}
+//		}
 		return false;
 	}
 

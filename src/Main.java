@@ -7,7 +7,7 @@ public class Main {
 		Set<Animal> zoo = new HashSet<>();
 		
 		Animal elephant = new Animal("elephant", "Africa", "herbivore");
-		Animal wolf = new Animal("wolf", "Europe", "carnivore");
+		Animal wolf = new Animal("wolf", "Europe", "carnivore"); //1st instance of wolf
 		Animal kangoroo = new Animal("kangoroo", "Australia", "herbivore");
 		
 		zoo.add(elephant);
@@ -16,8 +16,10 @@ public class Main {
 		
 		printAnimals(zoo);
 		
-		Animal anotherWolf = new Animal("wolf", "Europe", "carnivore");
+		Animal anotherWolf = new Animal("wolf", "Europe", "carnivore"); //2nd instance of wolf
+		Animal thirdWolf = new Animal("wolf", "North America", "carnivore"); //3rd instance of wolf with different origin
 		zoo.add(anotherWolf);
+		zoo.add(thirdWolf);
 		System.out.println();
 		
 		printAnimals(zoo);
